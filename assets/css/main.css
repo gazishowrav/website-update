@@ -42,6 +42,34 @@ a {
   font-size: 12px;
   text-transform: uppercase;
   color: #F2F2F2;
-  padding: 0.5rem;
+  padding: 0.25rem;
+}
+
+.header .top__header .hot__line {
+  font-size: 12px;
+  color: #F2F2F2;
+  padding: 0.25rem;
+}
+
+.header .top__header .hot__line:first-child span {
+  padding-right: 5px;
+}
+
+.header .top__header .social__link {
+  font-size: 12px;
+  color: #F2F2F2;
+  padding: 0.25rem;
+}
+
+.header .top__header .social__link:first-child span {
+  padding-right: 5px;
+}
+
+.header .top__header .social__link .social__icon a {
+  padding-right: 5px;
+}
+
+.header .top__header .social__link .social__icon a:last-child {
+  padding-right: 0;
 }
 /*# sourceMappingURL=main.css.map */

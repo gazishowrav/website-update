@@ -11,7 +11,35 @@
                  font-size: 12px;
                  text-transform: uppercase;
                  color: $gray-6;
-                 padding: 0.5rem;
+                 padding: 0.25rem;
+             }
+         }
+         .hot__line {
+             font-size: 12px;
+             color: $gray-6;
+             padding: 0.25rem;
+             &:first-child {
+                span {
+                    padding-right: 5px;
+                }
+             }
+         }
+         .social__link {
+             font-size: 12px;
+             color: $gray-6;
+             padding: 0.25rem;
+             &:first-child {
+                span {
+                    padding-right: 5px;
+                }
+             }
+             .social__icon {
+                 a {
+                     padding-right: 5px;
+                     &:last-child {
+                         padding-right: 0;
+                     }
+                 }
              }
          }
      }
