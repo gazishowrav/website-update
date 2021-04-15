@@ -1,0 +1,31 @@
+/*
+ * Slider
+ */
+
+ .slider {
+    .slide {
+        .carousel-control-next, 
+        .carousel-control-prev {
+            opacity: 1;
+            .carousel-control-prev-icon,
+            .carousel-control-next-icon {
+                width: 44px;
+                height: 44px;
+                background-color: rgba($primary, 0.4);
+                border-radius: 50%;
+                background-size: 50%;
+            }
+        }
+        
+        &:hover {
+            .carousel-control-next, 
+            .carousel-control-prev {
+                .carousel-control-prev-icon,
+                .carousel-control-next-icon {
+                    background-color: rgba($primary, 1);
+                }
+            }
+        }
+    }
+     
+ }

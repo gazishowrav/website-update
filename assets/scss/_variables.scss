@@ -1,5 +1,5 @@
 // color-variables
-$primary:   rgba(14, 72, 157, 0.9);
+$primary:   #0e48a0;
 $secondary: #E1A607;
 $gray-1:    #333333;
 $gray-2:    #4F4F4F;
@@ -7,5 +7,16 @@ $gray-3:    #828282;
 $gray-4:    #BDBDBD;
 $gray-5:    #E0E0E0;
 $gray-6:    #F2F2F2;
-$whithe:    #fff;
+$white:     #fff;
 $black:     #000;
+
+
+//font-variables
+
+$font-lg: 18px;
+$font-base: 14px;
+$font-sm: 12px;
+
+$fw-bold: bold; 
+$fw-600: 600; 
+$fw-400: 400; 
