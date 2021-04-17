@@ -1,3 +1,32 @@
 /*
  * Tab
  */
+
+ .category__tab {
+     .nav-item {
+         .nav-link {
+             position: relative;
+             font-size: $font-base;
+             font-weight: $fw-400;
+             color: $gray-2;
+             &::before {
+                content: "";
+                width: 0;
+                height: 3px;
+                background: $white;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                border-radius: 30px;
+                transition: all 333ms cubic-bezier(0.075, 0.82, 0.165, 1);
+            }
+            &.active, &:hover, &:focus {
+                color: $secondary;
+                &::before {
+                    width: 100%;
+                    background: $secondary;
+                }
+            }
+         }
+     }
+ }

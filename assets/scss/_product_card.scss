@@ -114,6 +114,8 @@
             justify-content: center;
             background: linear-gradient(90deg, #1488CC 0%, #2B32B2 100%);
             box-shadow: 0px 2.85px 7.83px rgba(29, 31, 34, 0.1);
+            // visibility: hidden;
+            // opacity: 0;
             transform: translateY(0px);
             transition: all 333ms cubic-bezier(0.075, 0.82, 0.165, 1);
             &:hover {
@@ -121,4 +123,12 @@
             }
         }
     }
+    // &:hover {
+    //     .product__details {
+    //         .product__details-cart {
+    //             visibility: visible;
+    //             opacity: 1;
+    //         }
+    //     }
+    // }
  }

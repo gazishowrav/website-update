@@ -1,0 +1,22 @@
+/*
+ * Partner
+ */
+
+ .partner {
+     .partner__title {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 23px;
+        text-transform: uppercase;
+        color: $gray-2;
+        text-align: center;
+        margin-bottom: 30px;
+     }
+     .partner__item {
+         background: $white;
+         box-shadow: 0px 4px 35px rgba(168, 172, 176, 0.19);
+        border-radius: 5px;
+     }
+ }

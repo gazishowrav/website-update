@@ -1,0 +1,110 @@
+/*
+ * Promotion
+ */
+
+ .promotion {
+     position: relative;
+     background: $primary;
+     .shape {
+         position: absolute;
+         &.left {
+             top: 0;
+             left: 0;
+         }
+         &.right {
+             right: 0;
+             bottom: 0;
+         }
+     }
+     .promotion__content {
+         position: relative;
+        padding: 80px 0;
+         h1 {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 42px;
+            line-height: 135%;
+            letter-spacing: 0.01em;
+            text-transform: uppercase;
+            color: $white;
+            margin-bottom: 15px;
+            span {
+                color: $secondary;
+            }
+         }
+         p {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 145%;
+            color: #E0E0E0;
+            margin-bottom: 30px;
+         }
+         .promotion__content-counter {
+             margin-bottom: 50px;
+             .count_item {
+                position: relative;
+                display: inline-block;
+                text-align: center;
+                padding-right: 20px;
+                &::before {
+                    content: ":";
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 48px;
+                    line-height: 48px;
+                    text-align: center;
+                    color: $secondary;
+                }
+                &:last-child {
+                    &::before {
+                        display: none;
+                    }
+                }
+                .count__num {
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 48px;
+                    line-height: 56px;
+                    text-align: center;
+                    color: $secondary;
+                    display: block;
+                 }
+                 .count__label {
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 145%;
+                    color: $gray-5;
+                 }
+             }
+         }
+         .btn-light {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 145%;
+            text-transform: uppercase;
+            color: $gray-2;
+            padding: 10px 20px;
+            transform: translateY(0px);
+            transition: all 333ms cubic-bezier(0.075, 0.82, 0.165, 1);
+            svg {
+                fill: $gray-2;
+            }
+            &:hover, &:focus, &:active {
+                transform: translateY(-5px);
+                box-shadow: none;
+            }
+         }
+     }
+ }

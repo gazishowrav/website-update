@@ -1,0 +1,38 @@
+/*
+ * Footer
+ */
+
+ .footer {
+     background: $primary;
+     padding: 40px 0;
+     .footer__title {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        text-transform: uppercase;
+        color: $gray-5;
+        margin-bottom: 25px;
+     }
+     .nav {
+         li {
+             a {
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 200%;
+                color: $gray-4;
+                padding: 10px 0;
+             }
+         }
+     }
+     .social__menus {
+         li {
+             a {
+                 margin-right: 10px;
+             }
+         }
+     }
+ }

@@ -1,0 +1,35 @@
+/*
+ * Shipment info
+ */
+
+ .shipment {
+     background: $gray-6;
+     padding: 20px;
+     .shipment__info {
+         display: flex;
+         .shipment__info-icon {
+             padding: 10px;
+         }
+         .shipment__info-content {
+             .shipment__info-title {
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 21px;
+                text-transform: uppercase;
+                color: $gray-2;
+                margin-bottom: 10px;
+             }
+             .shipment__info-description {
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 120%;
+                /* or 14px */
+                color: $gray-3;
+             }
+         }
+     }
+ }

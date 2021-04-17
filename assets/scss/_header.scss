@@ -238,6 +238,15 @@
                      }
                  }
              }
+             .menu__header-right {
+                 .nav-item {
+                     .nav-link {
+                         &::before {
+                             display: none;
+                         }
+                     }
+                 }
+             }
          }
      }
  }

@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "^5.0.0-beta3"
+    "bootstrap": "^5.0.0-beta3",
+    "owl.carousel": "^2.3.4"
   }
 }
