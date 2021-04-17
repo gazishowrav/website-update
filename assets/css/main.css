@@ -1000,4 +1000,28 @@ ul {
 .footer .social__menus li a {
   margin-right: 10px;
 }
+
+.footer__bottom {
+  background: rgba(14, 72, 160, 0.9);
+  padding: 20px;
+}
+
+.footer__bottom p {
+  color: #F2F2F2;
+  margin-bottom: 0;
+}
+
+/*
+ * Add To Cart
+ */
+.addto__cart {
+  position: fixed;
+  top: 178px;
+  bottom: 0px;
+  right: 0px;
+  background: #fff;
+  width: 320px;
+  height: calc(100% - 178px);
+  z-index: 100;
+}
 /*# sourceMappingURL=main.css.map */

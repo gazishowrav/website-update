@@ -1,0 +1,14 @@
+/*
+ * Add To Cart
+ */
+
+ .addto__cart {
+     position: fixed;
+     top: 178px;
+     bottom: 0px;
+     right: 0px;
+     background: $white;
+     width: 320px;
+     height: calc(100% - 178px);
+     z-index: 100;
+ }
