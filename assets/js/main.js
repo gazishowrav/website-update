@@ -22,4 +22,21 @@ jQuery(document).ready(function($) {
           }
         }
     });
+
+    // ADD TO CART
+    let openCart = document.getElementById('openCart');
+    let closeCart = document.getElementById('closeCart');
+    let addtoCart = document.querySelectorAll('.addto__cart');
+
+    openCart.onclick = function () { 
+      for(let x of addtoCart) {
+        x.classList.toggle('show');
+      }
+    };
+    
+    closeCart.onclick = function () { 
+      for(let x of addtoCart) {
+        x.classList.remove('show');
+      }
+    };
 });

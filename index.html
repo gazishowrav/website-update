@@ -97,7 +97,7 @@
                     </div>
                     <div class="main__header-right">
                         <div class="main__header-cart">
-                            <a href="#">
+                            <a href="javascript:void(0)" id="openCart">
                                 <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M5.29166 0.5H0.5V2.5H3.7184L6.4872 15.1776H6.5V15.5H19.5V15.2519L21.6932 5.59095L22.0308 4.5H6.1552L5.58485 1.88852L5.29166 0.5ZM19.4869 6.5H6.592L8.12081 13.5H17.8978L19.4869 6.5Z" fill="white"/>
                                     <path d="M9.5 20.5C10.6046 20.5 11.5 19.6046 11.5 18.5C11.5 17.3954 10.6046 16.5 9.5 16.5C8.39543 16.5 7.5 17.3954 7.5 18.5C7.5 19.6046 8.39543 20.5 9.5 20.5Z" fill="white"/>
@@ -1676,7 +1676,7 @@
                     </div>
                     <div class="col-5">
                         <div class="promotion__content-image">
-                            <img src="./assets/image/shoping-bags.png" alt="">
+                            <img src="./assets/image/shoping-bags.png" class="d-block w-100" alt="">
                         </div>
                     </div>
                 </div>
@@ -2537,8 +2537,136 @@
     <!--/Footer-->
     <!--Add To Cart-->
     <div class="addto__cart">
+        <div class="adto__cart-header">
+            <h4>Add To Cart</h4>
+            <button type="button" class="btn close shadow-none" id="closeCart">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.22517 4.81096C5.83465 4.42044 5.20148 4.42044 4.81096 4.81096C4.42044 5.20148 4.42044 5.83465 4.81096 6.22517L10.5857 11.9999L4.81102 17.7746C4.4205 18.1651 4.42049 18.7983 4.81102 19.1888C5.20154 19.5793 5.83471 19.5793 6.22523 19.1888L11.9999 13.4141L17.7746 19.1888C18.1651 19.5793 18.7983 19.5793 19.1888 19.1888C19.5793 18.7983 19.5793 18.1651 19.1888 17.7746L13.4141 11.9999L19.1889 6.22517C19.5794 5.83465 19.5794 5.20148 19.1889 4.81096C18.7983 4.42044 18.1652 4.42044 17.7746 4.81096L11.9999 10.5857L6.22517 4.81096Z" fill="#4F4F4F"/>
+                </svg>
+            </button>
+        </div>
         <div class="addto__cart-body">
-            ok
+            <div class="addto__cart-item">
+                <div class="addto__cart-img">
+                    <img src="./assets/image/products/product1.png" alt="">
+                    <div class="addto__cart-qty">
+                        <div class="addto__cart-qty-minus">
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.3335 6.9999C2.3335 6.67773 2.59466 6.41656 2.91683 6.41656H11.0835C11.4057 6.41656 11.6668 6.67773 11.6668 6.9999C11.6668 7.32206 11.4057 7.58323 11.0835 7.58323H2.91683C2.59466 7.58323 2.3335 7.32206 2.3335 6.9999Z" fill="white"/>
+                            </svg>
+                        </div>
+                        <div class="addto__cart-qty-input">
+                            1
+                        </div>
+                        <div class="addto__cart-qty-plus">
+                            <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.5 7.99988C13.5 8.27625 13.2764 8.49988 13 8.49988H7.5V13.9999C7.5 14.2763 7.27637 14.4999 7 14.4999C6.72362 14.4999 6.5 14.2763 6.5 13.9999V8.49988H1C0.723625 8.49988 0.5 8.27625 0.5 7.99988C0.5 7.7235 0.723625 7.49988 1 7.49988H6.5V1.99988C6.5 1.7235 6.72362 1.49988 7 1.49988C7.27637 1.49988 7.5 1.7235 7.5 1.99988V7.49988H13C13.2764 7.49988 13.5 7.7235 13.5 7.99988Z" fill="white"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="addto__cart-content">
+                    <a href="#">
+                        <h2 class="product__title">Some By Mi Yuja Niacin 30 Days Brightening Starter Kit</h2>
+                    </a>
+                    <div class="product__details-price">
+                        <div class="discount__price">$575</div>
+                        <div class="cost__price">$1150</div>
+                    </div>
+                </div>
+                <div class="remove" label-data="Remove Item">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M17 4.99988V3.99988C17 2.89531 16.1046 1.99988 15 1.99988H9C7.89543 1.99988 7 2.89531 7 3.99988V4.99988H4C3.44772 4.99988 3 5.44759 3 5.99988C3 6.55216 3.44772 6.99988 4 6.99988H5V17.9999C5 19.6567 6.34315 20.9999 8 20.9999H16C17.6569 20.9999 19 19.6567 19 17.9999V6.99988H20C20.5523 6.99988 21 6.55216 21 5.99988C21 5.44759 20.5523 4.99988 20 4.99988H17ZM15 3.99988H9V4.99988H15V3.99988ZM17 6.99988H7V17.9999C7 18.5522 7.44772 18.9999 8 18.9999H16C16.5523 18.9999 17 18.5522 17 17.9999V6.99988Z"/>
+                        <path d="M9 8.99988H11V16.9999H9V8.99988Z"/>
+                        <path d="M13 8.99988H15V16.9999H13V8.99988Z"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="addto__cart-item">
+                <div class="addto__cart-img">
+                    <img src="./assets/image/products/product2.png" alt="">
+                    <div class="addto__cart-qty">
+                        <div class="addto__cart-qty-minus">
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.3335 6.9999C2.3335 6.67773 2.59466 6.41656 2.91683 6.41656H11.0835C11.4057 6.41656 11.6668 6.67773 11.6668 6.9999C11.6668 7.32206 11.4057 7.58323 11.0835 7.58323H2.91683C2.59466 7.58323 2.3335 7.32206 2.3335 6.9999Z" fill="white"/>
+                            </svg>
+                        </div>
+                        <div class="addto__cart-qty-input">
+                            1
+                        </div>
+                        <div class="addto__cart-qty-plus">
+                            <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.5 7.99988C13.5 8.27625 13.2764 8.49988 13 8.49988H7.5V13.9999C7.5 14.2763 7.27637 14.4999 7 14.4999C6.72362 14.4999 6.5 14.2763 6.5 13.9999V8.49988H1C0.723625 8.49988 0.5 8.27625 0.5 7.99988C0.5 7.7235 0.723625 7.49988 1 7.49988H6.5V1.99988C6.5 1.7235 6.72362 1.49988 7 1.49988C7.27637 1.49988 7.5 1.7235 7.5 1.99988V7.49988H13C13.2764 7.49988 13.5 7.7235 13.5 7.99988Z" fill="white"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="addto__cart-content">
+                    <a href="#">
+                        <h2 class="product__title">Some By Mi Yuja Niacin 30 Days Brightening Starter Kit</h2>
+                    </a>
+                    <div class="product__details-price">
+                        <div class="discount__price">$575</div>
+                        <div class="cost__price">$1150</div>
+                    </div>
+                </div>
+                <div class="remove" label-data="Remove Item">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M17 4.99988V3.99988C17 2.89531 16.1046 1.99988 15 1.99988H9C7.89543 1.99988 7 2.89531 7 3.99988V4.99988H4C3.44772 4.99988 3 5.44759 3 5.99988C3 6.55216 3.44772 6.99988 4 6.99988H5V17.9999C5 19.6567 6.34315 20.9999 8 20.9999H16C17.6569 20.9999 19 19.6567 19 17.9999V6.99988H20C20.5523 6.99988 21 6.55216 21 5.99988C21 5.44759 20.5523 4.99988 20 4.99988H17ZM15 3.99988H9V4.99988H15V3.99988ZM17 6.99988H7V17.9999C7 18.5522 7.44772 18.9999 8 18.9999H16C16.5523 18.9999 17 18.5522 17 17.9999V6.99988Z"/>
+                        <path d="M9 8.99988H11V16.9999H9V8.99988Z"/>
+                        <path d="M13 8.99988H15V16.9999H13V8.99988Z"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="addto__cart-item">
+                <div class="addto__cart-img">
+                    <img src="./assets/image/products/product3.png" alt="">
+                    <div class="addto__cart-qty">
+                        <div class="addto__cart-qty-minus">
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.3335 6.9999C2.3335 6.67773 2.59466 6.41656 2.91683 6.41656H11.0835C11.4057 6.41656 11.6668 6.67773 11.6668 6.9999C11.6668 7.32206 11.4057 7.58323 11.0835 7.58323H2.91683C2.59466 7.58323 2.3335 7.32206 2.3335 6.9999Z" fill="white"/>
+                            </svg>
+                        </div>
+                        <div class="addto__cart-qty-input">
+                            1
+                        </div>
+                        <div class="addto__cart-qty-plus">
+                            <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.5 7.99988C13.5 8.27625 13.2764 8.49988 13 8.49988H7.5V13.9999C7.5 14.2763 7.27637 14.4999 7 14.4999C6.72362 14.4999 6.5 14.2763 6.5 13.9999V8.49988H1C0.723625 8.49988 0.5 8.27625 0.5 7.99988C0.5 7.7235 0.723625 7.49988 1 7.49988H6.5V1.99988C6.5 1.7235 6.72362 1.49988 7 1.49988C7.27637 1.49988 7.5 1.7235 7.5 1.99988V7.49988H13C13.2764 7.49988 13.5 7.7235 13.5 7.99988Z" fill="white"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="addto__cart-content">
+                    <a href="#">
+                        <h2 class="product__title">Some By Mi Yuja Niacin 30 Days Brightening Starter Kit</h2>
+                    </a>
+                    <div class="product__details-price">
+                        <div class="discount__price">$575</div>
+                        <div class="cost__price">$1150</div>
+                    </div>
+                </div>
+                <div class="remove" label-data="Remove Item">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M17 4.99988V3.99988C17 2.89531 16.1046 1.99988 15 1.99988H9C7.89543 1.99988 7 2.89531 7 3.99988V4.99988H4C3.44772 4.99988 3 5.44759 3 5.99988C3 6.55216 3.44772 6.99988 4 6.99988H5V17.9999C5 19.6567 6.34315 20.9999 8 20.9999H16C17.6569 20.9999 19 19.6567 19 17.9999V6.99988H20C20.5523 6.99988 21 6.55216 21 5.99988C21 5.44759 20.5523 4.99988 20 4.99988H17ZM15 3.99988H9V4.99988H15V3.99988ZM17 6.99988H7V17.9999C7 18.5522 7.44772 18.9999 8 18.9999H16C16.5523 18.9999 17 18.5522 17 17.9999V6.99988Z"/>
+                        <path d="M9 8.99988H11V16.9999H9V8.99988Z"/>
+                        <path d="M13 8.99988H15V16.9999H13V8.99988Z"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="addto__cart-footer">
+            <div class="addto__cart-voucher">
+                <span>Voucher Code</span>
+                <input type="text" placeholder="type your voucher code">
+            </div>
+            <div class="addto__cart-total-price">
+                <h2>Total: <span>৳ 1600</span></h2>
+            </div>
+            <div class="addto__cart-btn">
+                <button type="button" class="btn btn_update">Update cart</button>
+                <button type="button" class="btn btn_checkout">Checkout</button>
+            </div>
         </div>
     </div>
     <!--/Add To Cart-->

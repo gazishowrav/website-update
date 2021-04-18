@@ -54,6 +54,11 @@
              display: flex;
             .main__header-left {
                 width: 18%;
+                .logo {
+                    img {
+                        max-width: 100%;
+                    }
+                }
             }
             .main__header-center {
                 width: 68%;
