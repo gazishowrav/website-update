@@ -1,0 +1,89 @@
+/*
+ * Page Banner
+ */
+
+ .page__banner {
+     position: relative;
+     background: rgba($primary, 0.9);
+     min-height: 200px;
+     .shape {
+         position: absolute;
+         border-radius: 5px;
+         &.box1 {
+            left: 25%;
+            top: -30%;
+            width: 126px;
+            height: 126px;
+            background: rgba(#3566AF, 0.5);
+         }
+         &.box2 {
+            top: 20%;
+            left: 20%;
+            width: 63px;
+            height: 63px;
+            background: rgba(#3566AF, 0.5);
+         }
+         &.box3 {
+            left: 24%;
+            top: 55%;
+            width: 27px;
+            height: 27px;
+            background: rgba(#3566AF, 1);
+         }
+         &.box4 {
+            left: 65%;
+            top: 30%;
+            width: 27px;
+            height: 27px;
+            background: rgba(#3566AF, 1);
+         }
+         &.box5 {
+            left: 68%;
+            top: 45%;
+            width: 63px;
+            height: 63px;
+            background: rgba(#3566AF, 0.5);
+         }
+         &.left {
+             top: 0;
+             left: 0;
+         }
+         &.right {
+             right: 0;
+             bottom: 0;
+         }
+     }
+     .page__banner-content {
+         position: absolute;
+         left: 50%;
+         top: 50%;
+         text-align: center;
+         transform: translate(-50%, -50%);
+         .page__banner-title {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 160%;
+            /* or 38px */
+            text-transform: uppercase;
+            color: $white;
+         }
+         .breadcrumb {
+             justify-content: center;
+             .breadcrumb-item {
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 160%;
+                a {
+                    color: $gray-5;
+                }
+                &.active {
+                    color: $secondary;
+                }
+             }
+         }
+     }
+ }

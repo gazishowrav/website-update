@@ -32,3 +32,7 @@ ul {
     grid-column-gap: 15px;
     grid-row-gap: 15px;
 }
+
+main {
+    min-height: calc(100vh - 0px);
+}
