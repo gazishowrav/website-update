@@ -1,0 +1,96 @@
+/*
+ * Checkout
+ */
+
+ .checkout {
+     .checkout__tab {
+         display: flex;
+         justify-content: space-around;
+         border-bottom: 2px dashed $gray-5;
+         .checkout__tab-item {
+             text-align: center;
+             cursor: pointer;
+             padding: 10px;
+             transition: all 333ms cubic-bezier(0.075, 0.82, 0.165, 1);
+             svg {
+                display: block;
+                margin: 0 auto;
+                margin-bottom: 10px;
+                fill: $gray-2;
+                transition: all 333ms cubic-bezier(0.075, 0.82, 0.165, 1);
+             }
+             &.active, &:hover {
+                 color: $secondary;
+                 svg {
+                    fill: $secondary;
+                 }
+             }
+         }
+     }
+     .checkout__form {
+         padding: 20px;
+         .checkout__title {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 21px;
+            color: $gray-1;
+            margin-bottom: 20px;
+         }
+         .form__group {
+             margin-bottom: 18px;
+             .form__label {
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 200%;
+                display: block;
+                color: $gray-2;
+             }
+             .form__control {
+                padding: 10px;
+                border: 1px solid $gray-5;
+                min-height: calc(50px - 0px);
+                width: 100%;
+                border-radius: 5px;
+                &:focus, &:active {
+                    border: 1px solid $gray-5;
+                    outline: none;
+                }
+                &::placeholder {
+                    color: $gray-4;
+                }
+             }
+             .form__desc {
+                 font-size: 12px;
+                 color: $gray-3;
+             }
+             .btn-primary {
+                 background: rgba($color: $primary, $alpha: 0.9);
+                 border: 0;
+                 font-family: Roboto;
+                 font-style: normal;
+                 font-weight: 500;
+                 font-size: 14px;
+                 line-height: 200%;
+                 text-align: center;
+                 text-transform: uppercase;
+                 padding: 10px 25px;
+                 &.btn__back {
+                    background: rgba($primary, 0.6);
+                    border-color: rgba($primary, 0.6);
+                    margin-right: 10px;
+                 }
+             }
+         }
+         .form__group-row {
+             display: flex;
+             gap: 15px;
+             .form__group {
+                 width: 50%;
+             }
+         }
+     }
+ }

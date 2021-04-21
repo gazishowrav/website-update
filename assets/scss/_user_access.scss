@@ -1,0 +1,221 @@
+/*
+ * User Access
+ */
+
+ .user__access {
+     .user__access-body {
+         width: 1042px;
+         height: calc(100vh - 100px);
+         margin: 0 auto;
+         background: $white;
+         box-shadow: $box-s;
+         margin-top: 50px;
+         border-radius: 5px;
+         .left, 
+         .right {
+             width: 50%;
+             height: 100%;
+             float: left;
+             display: flex;
+             padding: 30px;
+         }
+         .left {
+             background: rgba($color: $primary, $alpha: 0.9);
+             border-top-left-radius: 5px;
+             border-bottom-left-radius: 5px;
+             align-items: center;
+         }
+         .right {
+             flex-direction: column;
+             border-top-right-radius: 5px;
+             border-bottom-right-radius: 5px;
+             padding: 50px;
+             .user__access-title {
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 160%;
+                /* or 38px */
+                text-transform: uppercase;
+                color: $gray-1;
+             }
+             .user__access-description {
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 160%;
+                /* or 22px */
+                color: $gray-2;
+                margin-bottom: 30px;
+             }
+             .user__access-account {
+                 background: $white;
+                 padding: 15px;
+                 box-shadow: $box-s;
+                 text-align: center;
+                 cursor: pointer;
+                 margin-bottom: 15px;
+                 font-family: Roboto;
+                 font-style: normal;
+                 font-weight: 500;
+                 font-size: 16px;
+                 line-height: 160%;
+                 color: $gray-1;
+                 border-radius: 5px;
+                 svg {
+                     margin-right: 5px;
+                 }
+             }
+             .user__access-divider {
+                position: relative;
+                background: #fff;
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 160%;
+                color: $gray-2;
+                text-align: center;
+                margin-bottom: 15px;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: -2px;
+                    left: 0;
+                    width: 45%;
+                    height: 1px;
+                    background: $gray-6;
+                    margin: 15px 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: -2px;
+                    right: 0;
+                    width: 45%;
+                    height: 1px;
+                    background: $gray-6;
+                    margin: 15px 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+             }
+             .user__access-form {
+                 .form__group {
+                     position: relative;
+                     display: flex;
+                     width: 100%;
+                     margin-bottom: 15px;
+                     .form__label {
+                        padding: 10px;
+                        border: 1px solid $gray-5;
+                        min-height: calc(50px - 0px);
+                        text-align: center;
+                        background: $gray-5;
+                        border-top-left-radius: 5px;
+                        border-bottom-left-radius: 5px;
+                     }
+                     .form__control {
+                        padding: 10px;
+                        border: 1px solid $gray-5;
+                        min-height: calc(50px - 0px);
+                        width: 100%;
+                        border-top-right-radius: 5px;
+                        border-bottom-right-radius: 5px;
+                        &:focus, &:active {
+                            border: 1px solid $gray-5;
+                            outline: none;
+                        }
+                        &::placeholder {
+                            color: $gray-4;
+                        }
+                     }
+                     .form__remember {
+                        font-family: Roboto;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 14px;
+                        line-height: 160%;
+                        /* or 22px */
+                        color: $gray-2;
+                        label {
+                            cursor: pointer;
+                        }
+                     }
+                     .form__forgot-password {
+                        font-family: Roboto;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 14px;
+                        line-height: 160%;
+                        /* or 22px */
+                        text-decoration-line: underline;
+                        color: $gray-2;
+                     }
+                     .form__show-password {
+                        position: absolute;
+                        right: 10px;
+                        top: 10px;
+                        cursor: pointer;
+                        visibility: hidden;
+                        opacity: 0;
+                     }
+                     .form__submit {
+                         width: 100%;
+                         height: calc(50px - 0px);
+                         background: rgba($primary, 0.9);
+                         color: $white;
+                         border: 0;
+                         border-radius: 5px;
+                         margin-top: 30px;
+                         font-family: Roboto;
+                         font-style: normal;
+                         font-weight: bold;
+                         font-size: 14px;
+                         line-height: 160%;
+                        /* or 22px */
+                         text-transform: uppercase;
+                         transition: all 333ms cubic-bezier(0.075, 0.82, 0.165, 1);
+                         &:hover {
+                             background: rgba($primary, 1);
+                         }
+                     }
+                     .form__signup-link {
+                         font-family: Roboto;
+                         font-style: normal;
+                         font-weight: normal;
+                         font-size: 14px;
+                         line-height: 160%;
+                        /* or 22px */
+                         color: $gray-2;
+                         width: 100%;
+                         text-align: center;
+                         margin: 15px 0;
+                        a {
+                            font-family: Roboto;
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 160%;
+                            /* or 22px */
+                            text-decoration-line: underline;
+                            color: $gray-2;
+                        }
+                     }
+                     &:hover {
+                         .form__show-password {
+                             visibility: visible;
+                             opacity: 1;
+                         }
+                     }
+                 }
+             }
+         }
+     }
+ }

@@ -11,7 +11,7 @@
          padding: 20px;
          display: flex;
          justify-content: space-between;
-         background: $primary;
+         background: rgba($color: $primary, $alpha: 0.9);
          border-top-left-radius: 5px;
          border-top-right-radius: 5px;
          .sidebar__header-title {

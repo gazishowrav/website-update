@@ -174,7 +174,10 @@
                 width: 60%;
                 padding: 10px;
                 border-radius: 5px;
-                border: 1px solid $gray-5
+                border: 1px solid $gray-5;
+                &:focus {
+                    outline: none;
+                }
             }
          }
          .addto__cart-total-price {
@@ -207,6 +210,9 @@
                 text-transform: uppercase;
                 border-radius: 0;
                 padding: 17px;
+                &:focus {
+                    box-shadow: none;
+                }
              }
              .btn_update {
                  background: rgba($primary, 0.6);

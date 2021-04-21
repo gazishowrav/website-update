@@ -39,4 +39,37 @@ jQuery(document).ready(function($) {
         x.classList.remove('show');
       }
     };
+
+    // Grid & List
+    let viewGrid = document.getElementById('viewGrid');
+    let viewList = document.getElementById('viewList');
+    let filterProducts = document.querySelectorAll('.filter__products');
+    let activeClassList = document.querySelectorAll('.filter__content-list');
+    let activeClassGrid = document.querySelectorAll('.filter__content-grid');
+
+    viewList.onclick = function () { 
+      for(let x of filterProducts) {
+        x.classList.remove('show');
+      }
+      for(let y of activeClassList) {
+        y.classList.add('active');
+      }
+      for(let y of activeClassgrid) {
+        y.classList.remove('active');
+      }
+    };
+
+    viewGrid.onclick = function () { 
+      for(let x of filterProducts) {
+        x.classList.add('show');
+      }
+      for(let y of activeClassGrid) {
+        y.classList.add('active');
+      }
+      for(let y of activeClassList) {
+        y.classList.remove('active');
+      }
+    };
+    
+
 });
