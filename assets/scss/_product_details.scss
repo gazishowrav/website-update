@@ -357,6 +357,19 @@
                 color: $gray-1;
              }
          }
+         .review__viewmore {
+             .review__viewmore-btn {
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 14px;
+                text-decoration-line: underline;
+                color: $gray-1;
+                display: block;
+                margin-top: 15px;
+             }
+         }
      }
  }
 
