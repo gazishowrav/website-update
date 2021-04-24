@@ -1,0 +1,62 @@
+/*
+ * Input
+ */
+
+ label {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 200%;
+    color: $gray-2;
+ }
+
+ .form-control, .form-select {
+     font-family: Roboto;
+     font-style: normal;
+     font-weight: normal;
+     font-size: 14px;
+     color: $gray-1;
+     width: 100%;
+     min-height: calc(50px - 0px);
+     border: 1px solid $gray-5;
+     border-radius: 5px;
+     box-shadow: none;
+     padding: 10px;
+     &:focus, &:active {
+        border: 1px solid $gray-5;
+        box-shadow: none;
+        outline: none;
+     }
+     &::placeholder {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 200%;
+        color: $gray-4;
+     }
+ }
+ 
+
+ .form-group {
+     margin-bottom: 15px;
+ }
+
+ .btn-submit {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 200%;
+    text-align: center;
+    text-transform: uppercase;
+     background: rgba($color:  $primary, $alpha: 0.9);
+     color: $white;
+     padding: 10px 25px;
+     transition: all 333ms cubic-bezier(0.075, 0.82, 0.165, 1);
+     &:focus, &:hover {
+         background: rgba($color:  $primary, $alpha: 1.0);
+         color: $white;
+     }
+ }

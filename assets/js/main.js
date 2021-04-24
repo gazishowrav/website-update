@@ -70,6 +70,24 @@ jQuery(document).ready(function($) {
         y.classList.remove('active');
       }
     };
+
+    // Modal 
+
+    let openModal = document.getElementById('openModal');
+    let closeModal = document.getElementById('closeModal');
+    let customModal = document.querySelectorAll('.custom__modal');
+
+    openModal.onclick = function () { 
+      for(let x of customModal) {
+        x.classList.toggle('show');
+      }
+    };
+    
+    closeModal.onclick = function () { 
+      for(let x of customModal) {
+        x.classList.remove('show');
+      }
+    };
     
 
 });

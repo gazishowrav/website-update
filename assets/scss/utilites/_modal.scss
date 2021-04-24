@@ -1,0 +1,67 @@
+/*
+ * Modal
+ */
+
+ .custom__modal {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     z-index: 999;
+     visibility: hidden;
+     opacity: 0;
+     &.show {
+        visibility: visible;
+        opacity: 1;
+    }
+     .custom__modal-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+         background: rgba(0, 0, 0, 0.3);
+     }
+     .custom__modal-content {
+        margin: 0 auto;
+        background: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        border-radius: 5px;
+        padding: 20px;
+        transform: translate(-50%, -50%);
+        &.mw-450 {
+            max-width: 450px;
+        }
+        &.mw-650 {
+            max-width: 650px;
+        }
+        &.mw-960 {
+            max-width: 960px;
+        }
+        .custom__modal-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 15px;
+            .custom__modal-title {
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 23px;
+                text-align: center;
+                text-transform: uppercase;
+                color: $gray-2;
+                margin-bottom: 0;
+            }
+            .close {
+                border: 0;
+                background: transparent;
+            }
+        }
+     }
+ }

@@ -98,5 +98,70 @@
                  }
              }
          }
+         .customer__dashboard-order-card {
+             padding: 20px;
+             margin-top: 30px;
+             box-shadow: $box-s;
+             .customer__dashboard-order-card-header {
+                 margin-bottom: 15px;
+                 .customer__dashboard-order-card-header-title {
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 19.1805px;
+                    line-height: 23px;
+                    text-transform: uppercase;
+                    color: $gray-2;
+                 }
+                 .customer__dashboard-order-searchbox {
+                     position: relative;
+                     input {
+                         border: 1px solid $gray-5;
+                         border-radius: 30px;
+                         padding: 5px 15px;
+                         &:focus {
+                            border: 1px solid $gray-5;
+                            outline: none;
+                         }
+                     }
+                     span {
+                         position: absolute;
+                         top: 5px;
+                         right: 15px;
+                         cursor: pointer;
+                     }
+                 }
+             }
+             .customer__dashboard-order-card-body {
+                 .table {
+                     tr {
+                         th, td {
+                             padding: 15px;
+                             a {
+                                 color: $primary;
+                                 font-weight: bold;
+                                 text-decoration: underline;
+                                 svg {
+                                     fill: $primary;
+                                     margin-right: 5px;
+                                 }
+                             }
+                         }
+                     }
+                 }
+                 .pagination {
+                     .page-item {
+                         .page-link {
+                             padding: 5px 13px;
+                         }
+                         &.active {
+                            .page-link {
+                                background: $primary;
+                            }
+                        }
+                     }
+                 }
+             }
+         }
      }
  }

@@ -1,0 +1,127 @@
+/*
+ * Invoice
+ */
+
+ .invoice__background {
+     width: 100%;
+     height: 100%;
+     padding: 50px;
+     display: block;
+     background-color: #E5E5E5;
+ }
+
+ .invoice {
+     max-width: 720px;
+     margin: 0 auto;
+     box-shadow: $box-s;
+     padding: 50px;
+     background: #fff;
+     .invoice__header {
+         .invoice__header-address {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 135%;
+            color: $gray-2;
+         }
+         
+     }
+     .invoice__body {
+         .invoice__body-title {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 16px;
+            color: $gray-2;
+            display: block;
+            margin-bottom: 5px;
+         }
+         .invoice__body-description {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+            color: $gray-1;
+         }
+         .invoice__divider {
+             width: 100%;
+             height: 1px;
+             background: $gray-3;
+             display: block;
+             margin: 15px 0;
+         }
+         .invoice__item {
+             .invoice__item-list {
+                 padding-bottom: 15px;
+                 margin: 15px 0;
+                 border-bottom: 1px solid $gray-3;
+                 &:first-child {
+                     border-bottom: 0;
+                 }
+                 .invoice__item-title {
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 16px;
+                    color: $gray-1;
+                 }
+                 .invoice__item-description {
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 16px;
+                    color: $gray-1;
+                 }
+             }
+         }
+         .invoice__note {
+             .invoice__note-title {
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 16px;
+                color: $gray-3;
+                margin-bottom: 10px;
+             }
+             .invoice__note-description {
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 145%;
+                color: $gray-2;
+             }
+         }
+         .invoice__amount-title {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 21px;
+            color: $gray-3;
+            margin-bottom: 10px;
+         }
+         .invoice__terms-title {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+            color: $gray-3;
+         }
+         .invoice__terms-description {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 145%;
+            color: $gray-2;
+         }
+     }
+ }
