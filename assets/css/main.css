@@ -2005,7 +2005,7 @@ label {
 }
 
 .product__details .product__size .product__size-label {
-  font-family: Poppins;
+  font-family: Roboto;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -2031,7 +2031,7 @@ label {
 }
 
 .product__details .product__color .product__color-label {
-  font-family: Poppins;
+  font-family: Roboto;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
