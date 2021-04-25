@@ -3365,6 +3365,7 @@ label {
   font-size: 14px;
   line-height: 16px;
   color: #828282;
+  margin-bottom: 10px;
 }
 
 .invoice .invoice__body .invoice__terms-description {
