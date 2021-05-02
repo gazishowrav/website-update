@@ -1520,6 +1520,12 @@ label {
   color: #828282;
 }
 
+@media (max-width: 992px) {
+  .shipment {
+    padding-bottom: 100px;
+  }
+}
+
 /*
  * Footer
  */
