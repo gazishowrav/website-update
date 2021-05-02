@@ -1,4 +1,4 @@
-jQuery(document).ready(function($) {
+window.onload = function() {
     "use strict";
     //  TESTIMONIALS CAROUSEL HOOK
     $('#customers-testimonials').owlCarousel({
@@ -24,70 +24,61 @@ jQuery(document).ready(function($) {
     });
 
     // ADD TO CART
-    let openCart = document.getElementById('openCart');
-    let closeCart = document.getElementById('closeCart');
-    let addtoCart = document.querySelectorAll('.addto__cart');
 
-    openCart.onclick = function () { 
-      for(let x of addtoCart) {
-        x.classList.toggle('show');
-      }
-    };
+    $("#openCart").click(function(){
+      $(".addto__cart").addClass("show");
+    });
     
-    closeCart.onclick = function () { 
-      for(let x of addtoCart) {
-        x.classList.remove('show');
-      }
-    };
+    $("#closeCart").click(function(){
+      $(".addto__cart").removeClass("show");
+    });
 
     // Grid & List
-    let viewGrid = document.getElementById('viewGrid');
-    let viewList = document.getElementById('viewList');
-    let filterProducts = document.querySelectorAll('.filter__products');
-    let activeClassList = document.querySelectorAll('.filter__content-list');
-    let activeClassGrid = document.querySelectorAll('.filter__content-grid');
 
-    viewList.onclick = function () { 
-      for(let x of filterProducts) {
-        x.classList.remove('show');
-      }
-      for(let y of activeClassList) {
-        y.classList.add('active');
-      }
-      for(let y of activeClassgrid) {
-        y.classList.remove('active');
-      }
-    };
+    $("#viewGrid").click(function(){
+      $(".filter__products").addClass("show");
+      $(".filter__content-grid").addClass("active");
+      $(".filter__content-list").removeClass("active");
+    });
+    
+    $("#viewList").click(function(){
+      $(".filter__products").removeClass("show");
+      $(".filter__content-list").addClass("active");
+      $(".filter__content-grid").removeClass("active");
+    });
 
-    viewGrid.onclick = function () { 
-      for(let x of filterProducts) {
-        x.classList.add('show');
-      }
-      for(let y of activeClassGrid) {
-        y.classList.add('active');
-      }
-      for(let y of activeClassList) {
-        y.classList.remove('active');
-      }
-    };
 
     // Modal 
 
-    let openModal = document.getElementById('openModal');
-    let closeModal = document.getElementById('closeModal');
-    let customModal = document.querySelectorAll('.custom__modal');
-
-    openModal.onclick = function () { 
-      for(let x of customModal) {
-        x.classList.toggle('show');
-      }
-    };
+    $("#openModal").click(function(){
+      $(".custom__modal").addClass("show");
+    });
     
-    closeModal.onclick = function () { 
-      for(let x of customModal) {
-        x.classList.remove('show');
-      }
-    };
+    $("#closeModal").click(function(){
+      $(".custom__modal").removeClass("show");
+    });
+
+    // Filter 
+
+    $("#openFilter").click(function(){
+      $(".mobile__filter-sidebar").toggleClass("show");
+    });
+
+    // Sidebar 
+
+    $("#openSidebar").click(function(){
+      $(".mobile__header-menu").addClass("show");
+    });
+    
+    $("#closeSidebar").click(function(){
+      $(".mobile__header-menu").removeClass("show");
+    });
+    
+    $("[data-sidebar='closeSidebar']").click(function(){
+      $(".mobile__header-menu").removeClass("show");
+    });
+
+    // Dropdown Menu
     
 
-});
+};

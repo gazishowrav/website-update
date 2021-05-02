@@ -36,3 +36,20 @@
          }
      }
  }
+
+ // Responsive 
+
+@media (max-width:992px) {
+    .product__view {
+        flex-direction: column-reverse;
+        gap: 10px;
+        .product__view-thumb {
+            width: 100%;
+            display: flex;
+            gap: 10px;
+        }
+        .product__view-image {
+            width: 100%;
+        }
+    }
+}

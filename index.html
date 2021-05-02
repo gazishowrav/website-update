@@ -694,6 +694,140 @@
             </div>
         </div>
     </div>
+    <div class="mobile__header">
+        <div class="mobile__menu" id="openSidebar">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 6C2 5.44772 2.44772 5 3 5H21C21.5523 5 22 5.44772 22 6C22 6.55228 21.5523 7 21 7H3C2.44772 7 2 6.55228 2 6Z" fill="white"/>
+                <path d="M2 12.0322C2 11.4799 2.44772 11.0322 3 11.0322H21C21.5523 11.0322 22 11.4799 22 12.0322C22 12.5845 21.5523 13.0322 21 13.0322H3C2.44772 13.0322 2 12.5845 2 12.0322Z" fill="white"/>
+                <path d="M3 17.0645C2.44772 17.0645 2 17.5122 2 18.0645C2 18.6167 2.44772 19.0645 3 19.0645H21C21.5523 19.0645 22 18.6167 22 18.0645C22 17.5122 21.5523 17.0645 21 17.0645H3Z" fill="white"/>
+            </svg>
+        </div>
+        <div class="mobile__logo">
+            <a href="index.html" class="logo">
+                <img src="./assets/image/logo.png" alt="">
+            </a>
+        </div>
+        <div class="mobile__search">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.8688 15.4575C19.3126 12.319 19.0918 7.77838 16.2067 4.89319C13.0825 1.769 8.01714 1.769 4.89295 4.89319C1.76876 8.01739 1.76876 13.0827 4.89295 16.2069C7.77813 19.0921 12.3188 19.3128 15.4573 16.8691C15.4708 16.8844 15.4849 16.8994 15.4996 16.914L19.7422 21.1567C20.1327 21.5472 20.7659 21.5472 21.1564 21.1567C21.5469 20.7661 21.5469 20.133 21.1564 19.7424L16.9138 15.4998C16.8991 15.4852 16.8841 15.4711 16.8688 15.4575ZM14.7924 6.30741C17.1356 8.65055 17.1356 12.4495 14.7924 14.7927C12.4493 17.1358 8.65031 17.1358 6.30716 14.7927C3.96402 12.4495 3.96402 8.65055 6.30716 6.30741C8.65031 3.96426 12.4493 3.96426 14.7924 6.30741Z" fill="white"/>
+            </svg>
+        </div>
+        <!--Mobile Header Menu-->
+        <div class="mobile__header-menu">
+            <button type="button" class="btn close" id="closeSidebar">
+                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.34519 4.09498C5.0457 3.79549 4.56012 3.79549 4.26063 4.09498C3.96114 4.39447 3.96114 4.88005 4.26063 5.17954L8.68927 9.60818L4.26068 14.0368C3.96118 14.3363 3.96118 14.8218 4.26068 15.1213C4.56017 15.4208 5.04574 15.4208 5.34524 15.1213L9.77383 10.6927L14.2024 15.1213C14.5019 15.4208 14.9875 15.4208 15.287 15.1213C15.5865 14.8218 15.5865 14.3363 15.287 14.0368L10.8584 9.60818L15.287 5.17954C15.5865 4.88005 15.5865 4.39447 15.287 4.09498C14.9875 3.79549 14.502 3.79549 14.2025 4.09498L9.77383 8.52362L5.34519 4.09498Z" fill="#4F4F4F"/>
+                </svg>
+            </button>
+            <ul class="nav flex-column mobile__header-navigation">
+                <li class="nav-item">
+                    <a href="#" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Women’s Fashions</a>
+                    <!--Dropdown Menu-->
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <div class="row">
+                            <div class="col-12">
+                                <h4 class="dropdown__menu-title">Summer fly</h4>
+                                <ul class="nav flex-column mb-3">
+                                    <li class="nav-item">
+                                        <a href="products.html" class="nav-link" data-sidebar='closeSidebar'>Skirts</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="products.html" class="nav-link" data-sidebar='closeSidebar'>Sweaters</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="products.html" class="nav-link" data-sidebar='closeSidebar'>Dresses</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="products.html" class="nav-link" data-sidebar='closeSidebar'>T-Shirts</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="products.html" class="nav-link" data-sidebar='closeSidebar'>Pants</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="products.html" class="nav-link" data-sidebar='closeSidebar'>Underwear</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="products.html" class="nav-link" data-sidebar='closeSidebar'>Jackets</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="products.html" class="nav-link" data-sidebar='closeSidebar'>Blouses</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-12">
+                                <h4 class="dropdown__menu-title">Accesories</h4>
+                                <ul class="nav flex-column mb-3">
+                                    <li class="nav-item">
+                                        <a href="products.html" class="nav-link" data-sidebar='closeSidebar'>Bags & Purses</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="products.html" class="nav-link" data-sidebar='closeSidebar'>Belts</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="products.html" class="nav-link" data-sidebar='closeSidebar'>Gloves</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="products.html" class="nav-link" data-sidebar='closeSidebar'>Hats</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-12">
+                                <h4 class="dropdown__menu-title">Shoes</h4>
+                                <ul class="nav flex-column mb-3">
+                                    <li class="nav-item">
+                                        <a href="products.html" class="nav-link" data-sidebar='closeSidebar'>Boots</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="products.html" class="nav-link" data-sidebar='closeSidebar'>Heels</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="products.html" class="nav-link" data-sidebar='closeSidebar'>Flat shoes</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="products.html" class="nav-link" data-sidebar='closeSidebar'>Loafers</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="products.html" class="nav-link" data-sidebar='closeSidebar'>Sandals</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="products.html" class="nav-link" data-sidebar='closeSidebar'>Slippers</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="products.html" class="nav-link" data-sidebar='closeSidebar'>Trainers</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/Dropdown Menu-->
+                </li>
+                <li class="nav-item dropdown__nav">
+                    <a href="#" class="nav-link dropdown__toggle">Men’s Fashions</a>
+                </li>
+                <li class="nav-item dropdown__nav">
+                    <a href="#" class="nav-link dropdown__toggle">Kid’s Zone</a>
+                </li>
+                <li class="nav-item dropdown__nav">
+                    <a href="#" class="nav-link dropdown__toggle">Health & Beauty</a>
+                </li>
+                <li class="nav-item dropdown__nav">
+                    <a href="#" class="nav-link dropdown__toggle">Current Offer</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Pre Order</a>
+                </li>
+            </ul>
+        </div>
+        <!--/Mobile Header Menu-->
+        <!--Mobile Search-->
+        <div class="mobile__search">
+            ok
+        </div>
+        <!--/Mobile Search-->
+    </div>
     <!--/Header-->
     <!--Main-->
     <main class="main">
@@ -726,12 +860,12 @@
         <div class="future__card">
             <div class="container">
                 <div class="row g-4">
-                    <div class="col-6">
+                    <div class="col-12 col-lg-6">
                         <a href="products.html">
                             <img src="./assets/image/promotion1.png" class="d-block w-100" alt="">
                         </a>
                     </div>
-                    <div class="col-6">
+                    <div class="col-12 col-lg-6">
                         <a href="products.html">
                             <img src="./assets/image/promotion2.png" class="d-block w-100" alt="">
                         </a>
@@ -761,7 +895,9 @@
                             <a href="#" class="nav-link">Current Offer</a>
                         </li>
                     </ul>
-                    <a href="#" class="btn btn-link">Explore all</a>
+                    <div class="dekstop__btn">
+                        <a href="#" class="btn btn-link">Explore all</a>
+                    </div>
                 </div>
                 <div class="category__products">
                     <div class="grid">
@@ -1397,6 +1533,9 @@
                         </div>
                     </div>
                 </div>
+                <div class="mobile__btn">
+                    <a href="#" class="btn btn-link">Explore all</a>
+                </div>
             </div>
         </div>
         <!--Category-->
@@ -1648,7 +1787,7 @@
             </span>
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-7">
+                    <div class="col-12 col-lg-7">
                         <div class="promotion__content">
                             <h1>Eid Collection<span> all new items</span></h1>
                             <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced for those. Sections 1.10.32 and 1.10.33 from “de Finibus Bonorum et Malorum</p>
@@ -1674,7 +1813,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-5">
+                    <div class="col-12 col-lg-5 d-none d-lg-block">
                         <div class="promotion__content-image">
                             <img src="./assets/image/shoping-bags.png" class="d-block w-100" alt="">
                         </div>
@@ -1942,7 +2081,9 @@
                             <a href="#" class="nav-link">Feauture</a>
                         </li>
                     </ul>
-                    <a href="#" class="btn btn-link">Explore all</a>
+                    <div class="dekstop__btn">
+                        <a href="#" class="btn btn-link">Explore all</a>
+                    </div>
                 </div>
                 <div class="category__products">
                     <div class="grid">
@@ -2263,6 +2404,9 @@
                         </div>
                     </div>
                 </div>
+                <div class="mobile__btn">
+                    <a href="#" class="btn btn-link">Explore all</a>
+                </div>
             </div>
         </div>
         <!--Category-->
@@ -2347,7 +2491,7 @@
     <div class="shipment">
         <div class="container">
             <div class="row">
-                <div class="col-3">
+                <div class="col-12 col-lg-3">
                     <div class="shipment__info">
                         <div class="shipment__info-icon">
                             <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2367,7 +2511,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-12 col-lg-3">
                     <div class="shipment__info">
                         <div class="shipment__info-icon">
                             <svg width="44" height="36" viewBox="0 0 44 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2387,7 +2531,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-12 col-lg-3">
                     <div class="shipment__info">
                         <div class="shipment__info-icon">
                             <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2401,7 +2545,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-12 col-lg-3">
                     <div class="shipment__info">
                         <div class="shipment__info-icon">
                             <svg width="44" height="51" viewBox="0 0 44 51" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2429,9 +2573,9 @@
     <div class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-8">
+                <div class="col-12 col-lg-8">
                     <div class="row">
-                        <div class="col-3">
+                        <div class="col-6 col-lg-3">
                             <h4 class="footer__title">Company</h4>
                             <ul class="nav flex-column">
                                 <li>
@@ -2451,7 +2595,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="col-3">
+                        <div class="col-6 col-lg-3">
                             <h4 class="footer__title">Departments</h4>
                             <ul class="nav flex-column">
                                 <li>
@@ -2465,7 +2609,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="col-3">
+                        <div class="col-6 col-lg-3">
                             <h4 class="footer__title">Orders</h4>
                             <ul class="nav flex-column">
                                 <li>
@@ -2479,7 +2623,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="col-3">
+                        <div class="col-6 col-lg-3">
                             <h4 class="footer__title">Policies</h4>
                             <ul class="nav flex-column">
                                 <li>
@@ -2501,7 +2645,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-lg-4">
                     <h4 class="footer__title">Company</h4>
                         <ul class="nav social__menus">
                             <li>
@@ -2673,7 +2817,7 @@
     </div>
     <!--/Add To Cart-->
     <!--Script-->
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <script src="./node_modules/jquery/dist/jquery.js"></script>
     <script src="./node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
     <script src="./assets/js/main.js"></script>

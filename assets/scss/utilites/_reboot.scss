@@ -36,3 +36,31 @@ ul {
 main {
     min-height: calc(100vh - 0px);
 }
+
+.dekstop__btn {
+    display: block;
+}
+
+.mobile__btn {
+    display: none;
+}
+
+// Responsive
+
+@media (max-width: 992px) {
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 15px;
+        grid-row-gap: 15px;
+    }
+    .dekstop__btn {
+        display: none;
+    }
+    
+    .mobile__btn {
+        display: block;
+        margin-top: 20px;
+        text-align: center;
+    }
+}

@@ -19,3 +19,31 @@
          text-transform: uppercase;
      }
  }
+
+ 
+  // Responsive 
+
+  @media (max-width:992px) {
+    .category__navigation {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        padding-bottom: 40px;
+        .category__tab {
+            white-space: nowrap;
+            flex-wrap: nowrap;
+            width: 100%;
+            overflow: auto;
+            .nav-item {
+                .nav-link {
+                    text-transform: uppercase;
+                }
+            }
+        }
+        .btn-link {
+            font-size: $font-base;
+            font-weight: $fw-500;
+            text-transform: uppercase;
+        }
+    }
+  }

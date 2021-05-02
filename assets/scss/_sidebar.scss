@@ -17,8 +17,6 @@
          border-top-left-radius: 5px;
          border-top-right-radius: 5px;
          .sidebar__header-title {
-             font-family: Roboto;
-             font-style: normal;
              font-weight: 500;
              font-size: 18px;
              line-height: 160%;
@@ -55,3 +53,10 @@
          }
      }
  }
+ // Responsive 
+
+@media (max-width:992px) {
+    .sidebar {
+        display: none;
+    }
+}

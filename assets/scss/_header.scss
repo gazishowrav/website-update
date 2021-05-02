@@ -255,3 +255,138 @@
          }
      }
  }
+
+ .mobile__header {
+     display: none;
+ }
+
+ // Responsive
+
+ @media (max-width:992px) {
+    .header {
+        display: none;
+    }
+    .mobile__header {
+        position: sticky;
+        top: 0;
+        z-index: 999;
+        background: $primary;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+        .mobile__header-menu {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            background: #fff;
+            height: 100%;
+            padding: 20px;
+            visibility: hidden;
+            opacity: 0;
+            transform: translate(-100%, 0%);
+            transition: all 333ms cubic-bezier(0.075, 0.82, 0.165, 1);
+            &.show {
+                visibility: visible;
+                opacity: 1;
+                transform: translate(0%, 0%);
+            }
+            .close {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                z-index: 9999;
+                background: #fff;
+            }
+            .mobile__header-navigation {
+                padding-top: 50px;
+                flex-wrap: nowrap;
+                width: 100%;
+                height: 100%;
+                overflow-x: hidden;
+                overflow-y: auto;
+                .nav-item {
+                    .nav-link {
+                        position: relative;
+                        font-family: Roboto;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 16px;
+                        text-transform: uppercase;
+                        color: #4F4F4F;
+                        white-space: nowrap;
+                        padding: 15px;
+                        padding-left: 1.5rem;
+                        transition: all 333ms cubic-bezier(0.075, 0.82, 0.165, 1);
+                        &::before {
+                            content: "";
+                            width: 10px;
+                            height: 10px;
+                            display: inline-block;
+                            border-radius: 50%;
+                            border: 1px solid $gray-4;
+                            position: absolute;
+                            top: 18px;
+                            left: 0;
+                        }
+                        &.active, &:hover {
+                            &::before {
+                                border: 1px solid $secondary;
+                                background: $secondary;
+                            }
+                        }
+                    }
+                    &.dropdown {
+                        .dropdown-toggle {
+                            position: relative;
+                            &::after {
+                                content: "";
+                                background-image: url("data:image/svg+xml,%3Csvg width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.75736 5.81812L3.6967 6.87878L8.99999 12.1821L14.3033 6.8788L13.2426 5.81814L9.00001 10.0608L4.75736 5.81812Z' fill='%234F4F4F'/%3E%3C/svg%3E%0A");                                position: absolute;
+                                background-repeat: no-repeat;
+                                top: 13px;
+                                right: 0;
+                                width: 18px;
+                                height: 18px;
+                                transform: translate(0deg);
+                                transition: all 333ms cubic-bezier(0.075, 0.82, 0.165, 1);
+                            }
+                            &.show {
+                                &::after {
+                                    transform: rotate(180deg);
+                                }
+                            }
+                        }
+                        .dropdown-menu {
+                            position: relative!important;
+                            padding: 20px;
+                            border: none;
+                            transform: translate(0)!important;
+                            .dropdown__menu-title {
+                                font-family: Roboto;
+                                font-style: normal;
+                                font-weight: 500;
+                                font-size: 16px;
+                                line-height: 19px;
+                                text-transform: uppercase;
+                                color: $gray-1;
+                            }
+                            .nav-item {
+                                .nav-link {
+                                    font-family: Roboto;
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 14px;
+                                    line-height: 140%;
+                                    text-transform: none;
+                                    color: $gray-2;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+ }

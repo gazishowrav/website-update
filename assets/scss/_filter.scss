@@ -74,10 +74,16 @@
                     }
                 }
             }
+            .filter__content-menu {
+                display: none;
+            }
             .filter__content-divider {
                 color: $gray-3;
             }
          }
+     }
+     .mobile__filter-sidebar {
+         display: none;
      }
  }
 
@@ -121,3 +127,93 @@
         }
     }
  }
+
+
+
+// Responsive 
+
+@media (max-width:992px) {
+    .filter {
+        position: relative;
+        .filter__content {
+            .filter__content-label {
+               display: none;
+            }
+            .filter__content-item {
+                .filter__select {
+                    display: none;
+                }
+            }
+            .filter__content-style {
+                .filter__content-menu {
+                    display: block;
+                }
+            }
+        }
+        .mobile__filter-sidebar {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            min-height: 100%;
+            background: #fff;
+            z-index: 9999;
+            margin-top: 30px;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 4px 35px rgba(168, 172, 176, 0.19);
+            display: block;
+            visibility: hidden;
+            opacity: 0;
+
+            &.show {
+                visibility: visible;
+                opacity: 1;
+            }
+
+            .sidebar__header-title {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 160%;
+                text-transform: uppercase;
+                color: $gray-2;
+                margin-bottom: 0;
+            }
+            .sidebar__body {
+                .sidebar__body-menu {
+                    padding: 20px;
+                   .sidebar__nav-title {
+                       font-family: Roboto;
+                       font-style: normal;
+                       font-weight: 500;
+                       font-size: 14px;
+                       line-height: 160%;
+                       /* or 22px */
+                       text-transform: uppercase;
+                       color: $gray-3;
+                       margin-bottom: 15px;
+                    }
+                    .sidebar__nav {
+                        .sidebar__nav-item {
+                            padding: 10px 0;
+                        }
+                    }
+                }
+                .divider {
+                   width: 100%;
+                   height: 1px;
+                   background: $gray-6;
+                   margin: 10px 0;
+                }
+            }
+        }
+    }
+    .filter__products {
+        .grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .view-list {
+            grid-template-columns: repeat(1, 1fr);
+        }
+     }
+}
