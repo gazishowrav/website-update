@@ -332,3 +332,15 @@
         }
      }
  }
+
+ // Responsive
+
+ @media (max-width:992px) {
+     .checkout {
+         .checkout__form {
+            .form__note {
+                width: 100%;
+            }
+         }
+     }
+ }

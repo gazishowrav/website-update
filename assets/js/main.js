@@ -29,6 +29,10 @@ window.onload = function() {
       $(".addto__cart").addClass("show");
     });
     
+    $(".openCart").click(function(){
+      $(".addto__cart").addClass("show");
+    });
+    
     $("#closeCart").click(function(){
       $(".addto__cart").removeClass("show");
     });
@@ -66,7 +70,7 @@ window.onload = function() {
 
     // Sidebar 
 
-    $("#openSidebar").click(function(){
+    $(".openSidebar").click(function(){
       $(".mobile__header-menu").addClass("show");
     });
     
@@ -78,7 +82,11 @@ window.onload = function() {
       $(".mobile__header-menu").removeClass("show");
     });
 
-    // Dropdown Menu
+    // Searchbox
+
+    $("#openSearch").click(function(){
+      $(".mobile__search-body").toggleClass("show");
+    });
     
 
 };
