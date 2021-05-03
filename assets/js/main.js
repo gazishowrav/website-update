@@ -74,6 +74,10 @@ window.onload = function() {
       $(".mobile__header-menu").addClass("show");
     });
     
+    $("#openSidebar").click(function(){
+      $(".mobile__header-menu").addClass("show");
+    });
+    
     $("#closeSidebar").click(function(){
       $(".mobile__header-menu").removeClass("show");
     });

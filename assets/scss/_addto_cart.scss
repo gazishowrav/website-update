@@ -225,3 +225,19 @@
          }
      }
  }
+
+ // Responsive
+
+ @media (max-width: 992px) {
+    .addto__cart {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        bottom: 0px;
+        right: 0px;
+        background: $white;
+        width: 100%;
+        height: calc(100% - 0px);
+        z-index: 9999;
+    }
+ }
