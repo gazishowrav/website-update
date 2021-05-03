@@ -3897,4 +3897,13 @@ label {
   line-height: 145%;
   color: #4F4F4F;
 }
+
+@media (max-width: 992px) {
+  .invoice__background {
+    padding: 0;
+  }
+  .invoice {
+    padding: 15px;
+  }
+}
 /*# sourceMappingURL=main.css.map */
