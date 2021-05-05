@@ -43,22 +43,84 @@
         }
     }
     .pre__order-body {
-        padding: 10px 20px;
-        height: calc(100% - 250px);
+        padding: 0px 20px;
+        height: calc(100% - 50px);
         overflow-y: auto;
         .pre__order-tab {
+            position: sticky;
+            top: 0;
+            z-index: 999;
+            background: #fff;
             border-bottom: 1px solid $gray-6;
             .nav-item {
                 .nav-link {
                     font-family: Roboto;
                     font-style: normal;
                     font-weight: normal;
-                    font-size: 16px;
+                    font-size: 14px;
                     line-height: 140%;
                     color: $gray-3;
+                    padding: 0.75rem 0.5rem;
+                    border: 0;
+                    border-bottom: 1px solid transparent;
                     &.active {
                         color: $primary;
+                        background: transparent;
+                        border-bottom: 1px solid $primary;
                     }
+                }
+            }
+        }
+        .pre__order-content {
+            padding: 0.5rem;
+            .pre__order-content-item {
+                .form-group {
+                    margin-bottom: 8px;
+                    .flow__form-file {
+                        .file-input__input {
+                          width: 0.1px;
+                          height: 0.1px;
+                          opacity: 0;
+                          overflow: hidden;
+                          position: absolute;
+                          z-index: -1;
+                        }
+                        .file-input__label {
+                          cursor: pointer;
+                          display: flex;
+                          align-items: center;
+                          justify-content: space-between;
+                          font-size: 14px;
+                          font-weight: 600;
+                          box-sizing: border-box;
+                          border: 1px solid #CED4DA;
+                          border-radius: 5px;
+                          padding: 15px;
+                          width: 100%;
+                          height: calc(50px - 0px);
+                        }
+                        .file-input__label svg {
+                          // height: 16px;
+                          margin-right: 4px;
+                        }
+                      }
+                }
+                .btn {
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 14px;
+                    line-height: 16px;
+                    text-transform: uppercase;
+                    border-radius: 0;
+                    padding: 17px;
+                    &:focus {
+                        box-shadow: none;
+                    }
+                 }
+                 .btn_preorder {
+                    background: rgba($primary, 0.9);
+                    color: $white;
                 }
             }
         }
@@ -166,5 +228,78 @@
                 }
             }
         }
+        .addto__cart-footer {
+            padding: 10px 20px;
+             .addto__cart-voucher {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 15px 0;
+                border-top: 1px solid $gray-6;
+                border-bottom: 1px solid $gray-6;
+                span {
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 21px;
+                    letter-spacing: 0.05em;
+                    text-transform: uppercase;
+                    color: $gray-2;
+                }
+                input {
+                    width: 60%;
+                    padding: 10px;
+                    border-radius: 5px;
+                    border: 1px solid $gray-5;
+                    &:focus {
+                        outline: none;
+                    }
+                }
+             }
+             .addto__cart-total-price {
+                 padding: 10px 0;
+                 text-align: right;
+                h2 {
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 24px;
+                    line-height: 28px;
+                    letter-spacing: 0.05em;
+                    color: $gray-2;
+                    margin-bottom: 0;
+                    span {
+                        color: $secondary;
+                    }
+                }
+             }
+             .addto__cart-btn {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-column-gap: 15px;
+                 .btn {
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 14px;
+                    line-height: 16px;
+                    text-transform: uppercase;
+                    border-radius: 0;
+                    padding: 17px;
+                    &:focus {
+                        box-shadow: none;
+                    }
+                 }
+                 .btn_update {
+                     background: rgba($primary, 0.6);
+                     color: $white;
+                 }
+                 .btn_checkout {
+                     background: $primary;
+                     color: $white;
+                 }
+             }
+         }
     }
  }

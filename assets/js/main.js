@@ -37,6 +37,20 @@ window.onload = function() {
       $(".addto__cart").removeClass("show");
     });
 
+    // Pre Order
+
+    $("#openPreorder").click(function(){
+      $(".pre__order").addClass("show");
+    });
+    
+    $(".openPreorder").click(function(){
+      $(".pre__order").addClass("show");
+    });
+    
+    $("#closePreorder").click(function(){
+      $(".pre__order").removeClass("show");
+    });
+
     // Grid & List
 
     $("#viewGrid").click(function(){

@@ -3967,12 +3967,17 @@ label {
 }
 
 .pre__order .pre__order-body {
-  padding: 10px 20px;
-  height: calc(100% - 250px);
+  padding: 0px 20px;
+  height: calc(100% - 50px);
   overflow-y: auto;
 }
 
 .pre__order .pre__order-body .pre__order-tab {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: #fff;
   border-bottom: 1px solid #F2F2F2;
 }
 
@@ -3980,13 +3985,82 @@ label {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 140%;
   color: #828282;
+  padding: 0.75rem 0.5rem;
+  border: 0;
+  border-bottom: 1px solid transparent;
 }
 
 .pre__order .pre__order-body .pre__order-tab .nav-item .nav-link.active {
   color: #0e48a0;
+  background: transparent;
+  border-bottom: 1px solid #0e48a0;
+}
+
+.pre__order .pre__order-body .pre__order-content {
+  padding: 0.5rem;
+}
+
+.pre__order .pre__order-body .pre__order-content .pre__order-content-item .form-group {
+  margin-bottom: 8px;
+}
+
+.pre__order .pre__order-body .pre__order-content .pre__order-content-item .form-group .flow__form-file .file-input__input {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.pre__order .pre__order-body .pre__order-content .pre__order-content-item .form-group .flow__form-file .file-input__label {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 14px;
+  font-weight: 600;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #CED4DA;
+  border-radius: 5px;
+  padding: 15px;
+  width: 100%;
+  height: calc(50px - 0px);
+}
+
+.pre__order .pre__order-body .pre__order-content .pre__order-content-item .form-group .flow__form-file .file-input__label svg {
+  margin-right: 4px;
+}
+
+.pre__order .pre__order-body .pre__order-content .pre__order-content-item .btn {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  border-radius: 0;
+  padding: 17px;
+}
+
+.pre__order .pre__order-body .pre__order-content .pre__order-content-item .btn:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.pre__order .pre__order-body .pre__order-content .pre__order-content-item .btn_preorder {
+  background: rgba(14, 72, 160, 0.9);
+  color: #fff;
 }
 
 .pre__order .pre__order-body .addto__cart-item {
@@ -4122,5 +4196,100 @@ label {
 
 .pre__order .pre__order-body .addto__cart-item .remove svg:hover {
   fill: red;
+}
+
+.pre__order .pre__order-body .addto__cart-footer {
+  padding: 10px 20px;
+}
+
+.pre__order .pre__order-body .addto__cart-footer .addto__cart-voucher {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px 0;
+  border-top: 1px solid #F2F2F2;
+  border-bottom: 1px solid #F2F2F2;
+}
+
+.pre__order .pre__order-body .addto__cart-footer .addto__cart-voucher span {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #4F4F4F;
+}
+
+.pre__order .pre__order-body .addto__cart-footer .addto__cart-voucher input {
+  width: 60%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #E0E0E0;
+}
+
+.pre__order .pre__order-body .addto__cart-footer .addto__cart-voucher input:focus {
+  outline: none;
+}
+
+.pre__order .pre__order-body .addto__cart-footer .addto__cart-total-price {
+  padding: 10px 0;
+  text-align: right;
+}
+
+.pre__order .pre__order-body .addto__cart-footer .addto__cart-total-price h2 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.05em;
+  color: #4F4F4F;
+  margin-bottom: 0;
+}
+
+.pre__order .pre__order-body .addto__cart-footer .addto__cart-total-price h2 span {
+  color: #E1A607;
+}
+
+.pre__order .pre__order-body .addto__cart-footer .addto__cart-btn {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 15px;
+}
+
+.pre__order .pre__order-body .addto__cart-footer .addto__cart-btn .btn {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  border-radius: 0;
+  padding: 17px;
+}
+
+.pre__order .pre__order-body .addto__cart-footer .addto__cart-btn .btn:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.pre__order .pre__order-body .addto__cart-footer .addto__cart-btn .btn_update {
+  background: rgba(14, 72, 160, 0.6);
+  color: #fff;
+}
+
+.pre__order .pre__order-body .addto__cart-footer .addto__cart-btn .btn_checkout {
+  background: #0e48a0;
+  color: #fff;
 }
 /*# sourceMappingURL=main.css.map */
