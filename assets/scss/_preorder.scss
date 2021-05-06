@@ -303,3 +303,52 @@
          }
     }
  }
+
+ .pre__order-button {
+     position: fixed;
+     bottom: 20px;
+     right: 20px;
+     z-index: 100;
+     .product__preorder {
+        font-size: 14px;
+        font-weight: bold;
+        color: #fff;
+        width: 120px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 0;
+        border-radius: 30px;
+        box-shadow: 4px 4px 5px 0px  rgba(55, 58, 61, 0.19);
+        background: rgba($secondary, 1);
+        transition: all 333ms cubic-bezier(0.075, 0.82, 0.165, 1);
+        svg {
+            fill: #fff;
+            margin-right: 5px;
+            transition: all 333ms cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+        &:hover {
+            background: rgba($secondary, 1);
+        }
+     }
+ }
+
+  // Responsive
+
+  @media (max-width: 992px) {
+    .pre__order {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        bottom: 0px;
+        right: 0px;
+        background: $white;
+        width: 100%;
+        height: calc(100% - 0px);
+        z-index: 9999;
+    }
+    .pre__order-button {
+        display: none;
+    }
+ }
