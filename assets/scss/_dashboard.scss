@@ -157,7 +157,8 @@
                          }
                          &.active {
                             .page-link {
-                                background: $primary;
+                                background: rgba($color: $primary, $alpha: 1);
+                                border-color: rgba($color: $primary, $alpha: 1);
                             }
                         }
                      }

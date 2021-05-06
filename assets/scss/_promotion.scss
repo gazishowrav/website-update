@@ -4,9 +4,13 @@
 
  .promotion {
      position: relative;
-     background: $primary;
+     background: rgba($primary, 1);
      .shape {
          position: absolute;
+         svg {
+            fill: currentColor;
+            color: rgba($white, 0.1);
+         }
          &.left {
              top: 0;
              left: 0;

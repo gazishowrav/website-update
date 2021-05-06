@@ -121,6 +121,8 @@
                 &.active {
                     .page-link {
                         color: $white;
+                        background: rgba($color: $primary, $alpha: 1);
+                        border-color: rgba($color: $primary, $alpha: 1);
                     }
                 }
             }
