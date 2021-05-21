@@ -3,6 +3,16 @@
  */
 
  .customer__dashboard {
+     .customer__dashboard-title {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        color: $gray-2;
+        text-transform: uppercase;
+        margin-bottom: 0;
+     }
      .customer__dashboard-sidebar {
          border-right: 1px solid $gray-5;
         .customer__dashboard-user {
@@ -103,6 +113,8 @@
                 .customer__dashboard-card-item {
                     position: relative;
                     border-radius: 5px;
+                    min-height: 120px;
+                    align-items: flex-start;
                     .customer__dashboard-card-content {
                         .customer__dashboard-card-title {
                            font-family: Roboto;
@@ -135,19 +147,19 @@
                             width: 43px;
                             height: 43px;
                             right: 10px;
-                            top: 6px;
+                            bottom: 60px;
                         }
                         &.shape2 {
                             width: 31px;
                             height: 31px;
                             right: 18px;
-                            top: 61px;
+                            bottom: 6px;
                         }
                         &.shape3 {
                             width: 23px;
                             height: 23px;
                             right: 60px;
-                            top: 50px;
+                            bottom: 31px;
                         }
                     }
                 }
@@ -231,7 +243,92 @@
                         }
                      }
                  }
+                 .user-graph {
+                     .graph-title {
+                        font-family: Roboto;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 16px;
+                        text-align: center;
+                        margin-top: 10px;
+                        
+                        /* Gray 2 */
+                        
+                        color: #4F4F4F;
+                     }
+                 }
              }
+             &.user__graph-card,
+             &.add__product-card {
+                height: calc(100% - 0px);
+                border-radius: 5px;
+            }
+            &.add__product-card {
+                position: relative;
+                background: rgba($color: $primary, $alpha: 0.6);
+                .shape {
+                    position: absolute;
+                    display: block;
+                    border-radius: 50%;
+                    background: rgba(255, 255, 255, 0.1);
+                    &.shape1 {
+                        width: 43px;
+                        height: 43px;
+                        right: 10px;
+                        bottom: 60px;
+                    }
+                    &.shape2 {
+                        width: 31px;
+                        height: 31px;
+                        right: 18px;
+                        bottom: 6px;
+                    }
+                    &.shape3 {
+                        width: 23px;
+                        height: 23px;
+                        right: 60px;
+                        bottom: 31px;
+                    }
+                }
+                .add__product-title {
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 21px;
+                    /* --White */
+
+                    color: #FFFFFF;
+                }
+            }
          }
+         .customer__dashboard-tab {
+            background: #fff;
+            .nav-item {
+                .nav-link {
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 140%;
+                    color: $gray-3;
+                    padding: 0.75rem 0.5rem;
+                    border: 0;
+                    border-bottom: 1px solid transparent;
+                    &.active {
+                        color: $primary;
+                        background: transparent;
+                        border-bottom: 1px solid $primary;
+                    }
+                    &:first-child {
+                        padding-left: 0;
+                    }
+                }
+            }
+            .customer__dashboard-tab-content {
+                padding: 0.5rem 0;
+            }
+        }
      }
  }

@@ -64,3 +64,15 @@ main {
         text-align: center;
     }
 }
+
+// button
+
+.btn-primary {
+    font-size: 14px;
+    background: rgba($color: $primary, $alpha: 0.9);
+    border-color: rgba($color: $primary, $alpha: 0.9);
+    &:hover {
+        background: rgba($color: $primary, $alpha: 1.0);
+        border-color: rgba($color: $primary, $alpha: 1.0);
+    }
+}
