@@ -479,19 +479,19 @@ label {
 }
 
 .header .main__header .main__header-content .main__header-center .main__header-search input::-webkit-input-placeholder {
-  color: #F2F2F2;
+  color: rgba(242, 242, 242, 0.4);
 }
 
 .header .main__header .main__header-content .main__header-center .main__header-search input:-ms-input-placeholder {
-  color: #F2F2F2;
+  color: rgba(242, 242, 242, 0.4);
 }
 
 .header .main__header .main__header-content .main__header-center .main__header-search input::-ms-input-placeholder {
-  color: #F2F2F2;
+  color: rgba(242, 242, 242, 0.4);
 }
 
 .header .main__header .main__header-content .main__header-center .main__header-search input::placeholder {
-  color: #F2F2F2;
+  color: rgba(242, 242, 242, 0.4);
 }
 
 .header .main__header .main__header-content .main__header-center .main__header-search .btn-secondary {
@@ -3878,6 +3878,82 @@ label {
   line-height: 18px;
   text-transform: uppercase;
   color: #4F4F4F;
+}
+
+.customer__dashboard .customer__dashboard-content .customer__dashboard-card.marcent .customer__dashboard-card-item {
+  position: relative;
+  border-radius: 5px;
+}
+
+.customer__dashboard .customer__dashboard-content .customer__dashboard-card.marcent .customer__dashboard-card-item .customer__dashboard-card-content .customer__dashboard-card-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 0;
+}
+
+.customer__dashboard .customer__dashboard-content .customer__dashboard-card.marcent .customer__dashboard-card-item .customer__dashboard-card-content .customer__dashboard-card-subtitle {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.customer__dashboard .customer__dashboard-content .customer__dashboard-card.marcent .customer__dashboard-card-item .shape {
+  position: absolute;
+  display: block;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.customer__dashboard .customer__dashboard-content .customer__dashboard-card.marcent .customer__dashboard-card-item .shape.shape1 {
+  width: 43px;
+  height: 43px;
+  right: 10px;
+  top: 6px;
+}
+
+.customer__dashboard .customer__dashboard-content .customer__dashboard-card.marcent .customer__dashboard-card-item .shape.shape2 {
+  width: 31px;
+  height: 31px;
+  right: 18px;
+  top: 61px;
+}
+
+.customer__dashboard .customer__dashboard-content .customer__dashboard-card.marcent .customer__dashboard-card-item .shape.shape3 {
+  width: 23px;
+  height: 23px;
+  right: 60px;
+  top: 50px;
+}
+
+.customer__dashboard .customer__dashboard-content .customer__dashboard-card .bg-primary {
+  background: rgba(14, 72, 160, 0.6) !important;
+}
+
+.customer__dashboard .customer__dashboard-content .customer__dashboard-card .bg-success {
+  background: rgba(39, 174, 96, 0.6) !important;
+}
+
+.customer__dashboard .customer__dashboard-content .customer__dashboard-card .bg-warning {
+  background: rgba(225, 166, 7, 0.6) !important;
+}
+
+.customer__dashboard .customer__dashboard-content .customer__dashboard-card .bg-danger {
+  background: rgba(237, 34, 34, 0.6) !important;
 }
 
 .customer__dashboard .customer__dashboard-content .customer__dashboard-order-card {

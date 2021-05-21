@@ -98,6 +98,74 @@
                      }
                  }
              }
+
+            &.marcent {
+                .customer__dashboard-card-item {
+                    position: relative;
+                    border-radius: 5px;
+                    .customer__dashboard-card-content {
+                        .customer__dashboard-card-title {
+                           font-family: Roboto;
+                           font-style: normal;
+                           font-weight: bold;
+                           font-size: 25px;
+                           line-height: 35px;
+                           display: flex;
+                           align-items: center;
+                           text-transform: uppercase;
+                           color: #fff;
+                           margin-bottom: 0;
+                        }
+                        .customer__dashboard-card-subtitle {
+                           font-family: Roboto;
+                           font-style: normal;
+                           font-weight: 500;
+                           font-size: 14px;
+                           line-height: 18px;
+                           text-transform: uppercase;
+                           color: #fff;
+                        }
+                    }
+                    .shape {
+                        position: absolute;
+                        display: block;
+                        border-radius: 50%;
+                        background: rgba(255, 255, 255, 0.1);
+                        &.shape1 {
+                            width: 43px;
+                            height: 43px;
+                            right: 10px;
+                            top: 6px;
+                        }
+                        &.shape2 {
+                            width: 31px;
+                            height: 31px;
+                            right: 18px;
+                            top: 61px;
+                        }
+                        &.shape3 {
+                            width: 23px;
+                            height: 23px;
+                            right: 60px;
+                            top: 50px;
+                        }
+                    }
+                }
+            }
+             // Background Color
+
+            .bg-primary {
+                background: rgba($color: $primary, $alpha: 0.6)!important;
+            }
+            .bg-success {
+                background: rgba($color: $success, $alpha: 0.6)!important;
+            }
+            .bg-warning {
+                background: rgba($color: $secondary, $alpha: 0.6)!important;
+            }
+            .bg-danger {
+                background: rgba($color: $danger, $alpha: 0.6)!important;
+            }
          }
          .customer__dashboard-order-card {
              padding: 20px;
