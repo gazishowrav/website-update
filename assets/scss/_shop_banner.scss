@@ -1,0 +1,53 @@
+/*
+ * shop Banner
+ */
+
+ .shop__banner {
+    position: relative;
+    background: rgba($primary, 0.9);
+    min-height: 350px;
+    .shop__banner-content {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        z-index: 5;
+        text-align: center;
+        transform: translate(-50%, -50%);
+        .shop__banner-title {
+           font-family: Roboto;
+           font-style: normal;
+           font-weight: 500;
+           font-size: 24px;
+           line-height: 160%;
+           /* or 38px */
+           text-transform: uppercase;
+           color: $white;
+        }
+        .shop__banner-text {
+           font-family: Roboto;
+           font-style: normal;
+           font-weight: 300;
+           font-size: 16px;
+           line-height: 160%;
+           /* or 38px */
+           text-transform: uppercase;
+           color: $white;
+        }
+        .breadcrumb {
+            justify-content: center;
+            .breadcrumb-item {
+               font-family: Roboto;
+               font-style: normal;
+               font-weight: 500;
+               font-size: 14px;
+               line-height: 160%;
+               a {
+                   color: $gray-5;
+               }
+               &.active {
+                   color: $secondary;
+               }
+            }
+        }
+    }
+}

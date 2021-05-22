@@ -73,14 +73,33 @@ main {
 }
 
 .btn-primary {
+  border-radius: 0;
   font-size: 14px;
+  padding: 10px 24px;
+  color: #fff;
   background: rgba(14, 72, 160, 0.9);
   border-color: rgba(14, 72, 160, 0.9);
 }
 
 .btn-primary:hover {
+  color: #fff;
   background: #0e48a0;
   border-color: #0e48a0;
+}
+
+.btn-warning {
+  border-radius: 0;
+  font-size: 14px;
+  padding: 10px 24px;
+  color: #fff;
+  background: rgba(225, 166, 7, 0.9);
+  border-color: rgba(225, 166, 7, 0.9);
+}
+
+.btn-warning:hover {
+  color: #fff;
+  background: #e1a607;
+  border-color: #e1a607;
 }
 
 /*
@@ -2224,6 +2243,69 @@ label {
 }
 
 .page__banner .page__banner-content .breadcrumb .breadcrumb-item.active {
+  color: #E1A607;
+}
+
+/*
+ * shop Banner
+ */
+.shop__banner {
+  position: relative;
+  background: rgba(14, 72, 160, 0.9);
+  min-height: 350px;
+}
+
+.shop__banner .shop__banner-content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 5;
+  text-align: center;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.shop__banner .shop__banner-content .shop__banner-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 160%;
+  /* or 38px */
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.shop__banner .shop__banner-content .shop__banner-text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 160%;
+  /* or 38px */
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.shop__banner .shop__banner-content .breadcrumb {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.shop__banner .shop__banner-content .breadcrumb .breadcrumb-item {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 160%;
+}
+
+.shop__banner .shop__banner-content .breadcrumb .breadcrumb-item a {
+  color: #E0E0E0;
+}
+
+.shop__banner .shop__banner-content .breadcrumb .breadcrumb-item.active {
   color: #E1A607;
 }
 
