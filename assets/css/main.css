@@ -2310,6 +2310,159 @@ label {
 }
 
 /*
+ * Tracking
+ */
+.customer__dashboard .tracking__search-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 160%;
+  color: #333333;
+}
+
+.customer__dashboard .tracking__search {
+  position: relative;
+}
+
+.customer__dashboard .tracking__search .tracking__search-icon {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.customer__dashboard .tracking__search .form-control {
+  padding: 20px;
+  border-radius: 30px;
+  height: calc(62px - 0px);
+}
+
+.customer__dashboard .tracking__invoice .tracking__invoice-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 160%;
+  color: #333333;
+  border-bottom: 1px solid #F2F2F2;
+}
+
+.customer__dashboard .tracking__invoice .tracking__invoice-body {
+  margin-bottom: 20px;
+}
+
+.customer__dashboard .tracking__invoice .tracking__invoice-body .tracking__invoice-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+  border-bottom: 1px solid #F2F2F2;
+}
+
+.customer__dashboard .tracking__invoice .tracking__invoice-body .tracking__invoice-item:last-child {
+  border-bottom: 0;
+}
+
+.customer__dashboard .tracking__invoice .tracking__invoice-body .tracking__invoice-item .tracking__invoice-name {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #4F4F4F;
+  width: 50%;
+}
+
+.customer__dashboard .tracking__invoice .tracking__invoice-body .tracking__invoice-item .tracking__invoice-details {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #4F4F4F;
+}
+
+.customer__dashboard .tracking__invoice .tracking__invoice-body .tracking__invoice-item .tracking__invoice-details.tracking__invoice-price {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: rgba(14, 72, 160, 0.9);
+}
+
+.customer__dashboard .tracking__invoice .tracking__invoice-body.tracking__invoice-card {
+  background: #FFFFFF;
+  padding: 20px;
+  -webkit-box-shadow: 0px 4px 35px rgba(168, 172, 176, 0.19);
+          box-shadow: 0px 4px 35px rgba(168, 172, 176, 0.19);
+  border-radius: 5px;
+}
+
+.customer__dashboard .tracking__invoice .tracking__invoice-body.tracking__invoice-card ol {
+  list-style-type: none;
+}
+
+.customer__dashboard .tracking__invoice .tracking__invoice-body.tracking__invoice-card ol li {
+  position: relative;
+  margin: 0;
+  padding-bottom: 80px;
+  padding-left: 40px;
+}
+
+.customer__dashboard .tracking__invoice .tracking__invoice-body.tracking__invoice-card ol li::before {
+  content: '';
+  background-color: #F2F2F2;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 11px;
+  width: 3px;
+}
+
+.customer__dashboard .tracking__invoice .tracking__invoice-body.tracking__invoice-card ol li::after {
+  content: attr(data-position);
+  background-color: #E1A607;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 25px;
+  color: #fff;
+}
+
+.customer__dashboard .tracking__invoice .tracking__invoice-body.tracking__invoice-card ol li .tracking__invoice-card-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  color: #4F4F4F;
+}
+
+.customer__dashboard .tracking__invoice .tracking__invoice-body.tracking__invoice-card ol li .tracking__invoice-card-title span {
+  color: rgba(14, 72, 160, 0.9);
+}
+
+.customer__dashboard .tracking__invoice .tracking__invoice-body.tracking__invoice-card ol li .tracking__invoice-card-date {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 160%;
+  color: #828282;
+}
+
+/*
  * Sidebar
  */
 .sidebar {
